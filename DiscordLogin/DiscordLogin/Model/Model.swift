@@ -74,6 +74,7 @@ class Model {
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
+                print(json)
                 
                 guard let username = json["username"].string,
                       let discriminator = json["discriminator"].string else {
