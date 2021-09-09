@@ -8,12 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    private var model: Model!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        model = Model()
     }
-
-
 }
 

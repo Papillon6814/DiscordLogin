@@ -1,0 +1,6 @@
+framework module Pods_DiscordLogin {
+  umbrella header "Pods-DiscordLogin-umbrella.h"
+
+  export *
+  module * { export * }
+}

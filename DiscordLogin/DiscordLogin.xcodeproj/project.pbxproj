@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,14 @@
 		7A8C322E26E9D3FD00E00204 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A8C322C26E9D3FD00E00204 /* Main.storyboard */; };
 		7A8C323026E9D3FE00E00204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A8C322F26E9D3FE00E00204 /* Assets.xcassets */; };
 		7A8C323326E9D3FE00E00204 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A8C323126E9D3FE00E00204 /* LaunchScreen.storyboard */; };
+		7A8C323B26E9D62100E00204 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8C323A26E9D62100E00204 /* Model.swift */; };
+		B9D0C6CA6EC2C6B847EE7074 /* Pods_DiscordLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCE477960C098F0D99E1133 /* Pods_DiscordLogin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07A4F0F1B523D478458AD2FF /* Pods-DiscordLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscordLogin.debug.xcconfig"; path = "Target Support Files/Pods-DiscordLogin/Pods-DiscordLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		17E660E6445F4EA4A1040867 /* Pods-DiscordLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscordLogin.release.xcconfig"; path = "Target Support Files/Pods-DiscordLogin/Pods-DiscordLogin.release.xcconfig"; sourceTree = "<group>"; };
+		3BCE477960C098F0D99E1133 /* Pods_DiscordLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiscordLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A8C322326E9D3FC00E00204 /* DiscordLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscordLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A8C322626E9D3FC00E00204 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A8C322826E9D3FD00E00204 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		7A8C322F26E9D3FE00E00204 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A8C323226E9D3FE00E00204 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A8C323426E9D3FE00E00204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A8C323A26E9D62100E00204 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9D0C6CA6EC2C6B847EE7074 /* Pods_DiscordLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C4655EA258028CB17D25DD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BCE477960C098F0D99E1133 /* Pods_DiscordLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7A8C321A26E9D3FC00E00204 = {
 			isa = PBXGroup;
 			children = (
 				7A8C322526E9D3FC00E00204 /* DiscordLogin */,
 				7A8C322426E9D3FC00E00204 /* Products */,
+				819DB0852FF1D64EE6E6D8B1 /* Pods */,
+				6C4655EA258028CB17D25DD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +80,18 @@
 				7A8C322F26E9D3FE00E00204 /* Assets.xcassets */,
 				7A8C323126E9D3FE00E00204 /* LaunchScreen.storyboard */,
 				7A8C323426E9D3FE00E00204 /* Info.plist */,
+				7A8C323A26E9D62100E00204 /* Model.swift */,
 			);
 			path = DiscordLogin;
+			sourceTree = "<group>";
+		};
+		819DB0852FF1D64EE6E6D8B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07A4F0F1B523D478458AD2FF /* Pods-DiscordLogin.debug.xcconfig */,
+				17E660E6445F4EA4A1040867 /* Pods-DiscordLogin.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A8C323726E9D3FE00E00204 /* Build configuration list for PBXNativeTarget "DiscordLogin" */;
 			buildPhases = (
+				06E48C3BDD4EACE6B2997F76 /* [CP] Check Pods Manifest.lock */,
 				7A8C321F26E9D3FC00E00204 /* Sources */,
 				7A8C322026E9D3FC00E00204 /* Frameworks */,
 				7A8C322126E9D3FC00E00204 /* Resources */,
+				0BEC128832334E10EC550CFC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +161,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06E48C3BDD4EACE6B2997F76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiscordLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0BEC128832334E10EC550CFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiscordLogin/Pods-DiscordLogin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiscordLogin/Pods-DiscordLogin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DiscordLogin/Pods-DiscordLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7A8C321F26E9D3FC00E00204 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +211,7 @@
 				7A8C322B26E9D3FD00E00204 /* ViewController.swift in Sources */,
 				7A8C322726E9D3FC00E00204 /* AppDelegate.swift in Sources */,
 				7A8C322926E9D3FD00E00204 /* SceneDelegate.swift in Sources */,
+				7A8C323B26E9D62100E00204 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +274,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -220,6 +293,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -263,6 +337,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -274,6 +349,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -283,11 +359,13 @@
 		};
 		7A8C323826E9D3FE00E00204 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07A4F0F1B523D478458AD2FF /* Pods-DiscordLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AHXF3NQ84L;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = DiscordLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,11 +380,13 @@
 		};
 		7A8C323926E9D3FE00E00204 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17E660E6445F4EA4A1040867 /* Pods-DiscordLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AHXF3NQ84L;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = DiscordLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
