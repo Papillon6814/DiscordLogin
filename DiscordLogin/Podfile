@@ -5,6 +5,7 @@ inhibit_all_warnings!
 # Pods for DiscordLogin
 def install_pods
   pod 'Alamofire'
+  pod 'RealmSwift'
 end
 
 target 'DiscordLogin' do

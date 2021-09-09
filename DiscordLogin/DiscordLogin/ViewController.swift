@@ -19,9 +19,5 @@ class ViewController: UIViewController {
         
         model = Model()
     }
-    
-    @IBAction func onButtonPushed(_ sender: Any) {
-        model.openAuthScreen()
-    }
 }
 

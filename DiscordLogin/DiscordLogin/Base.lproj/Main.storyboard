@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -38,7 +39,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
-                                    <action selector="onButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VLB-o7-UrV"/>
+                                    <segue destination="bLe-h3-THi" kind="show" id="cKM-8s-fhh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -67,5 +68,42 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="uQw-zz-Lfj">
+            <objects>
+                <viewController id="bLe-h3-THi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="64j-3L-ayi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nSS-mb-J8i">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5QQ-AX-tXa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nSS-mb-J8i" firstAttribute="top" secondItem="5QQ-AX-tXa" secondAttribute="top" id="3ec-iE-W0k"/>
+                            <constraint firstItem="nSS-mb-J8i" firstAttribute="bottom" secondItem="5QQ-AX-tXa" secondAttribute="bottom" id="CkW-9K-gtG"/>
+                            <constraint firstItem="nSS-mb-J8i" firstAttribute="leading" secondItem="5QQ-AX-tXa" secondAttribute="leading" id="QbU-SD-nfb"/>
+                            <constraint firstItem="nSS-mb-J8i" firstAttribute="trailing" secondItem="5QQ-AX-tXa" secondAttribute="trailing" id="bbf-XC-lIU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9y1-PO-k7P"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BZh-XP-ugB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072" y="113"/>
+        </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
