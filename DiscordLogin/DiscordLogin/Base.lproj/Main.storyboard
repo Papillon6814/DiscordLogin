@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="uQw-zz-Lfj">
             <objects>
-                <viewController id="bLe-h3-THi" sceneMemberID="viewController">
+                <viewController id="bLe-h3-THi" customClass="WebViewController" customModule="DiscordLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="64j-3L-ayi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,6 +95,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9y1-PO-k7P"/>
+                    <connections>
+                        <outlet property="webView" destination="nSS-mb-J8i" id="Ug1-au-FvR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BZh-XP-ugB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
