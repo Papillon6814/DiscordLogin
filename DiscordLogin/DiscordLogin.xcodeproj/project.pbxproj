@@ -17,6 +17,7 @@
 		7A8C323F26E9ECB100E00204 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8C323E26E9ECB100E00204 /* WebKit.framework */; };
 		7A8C324326E9EDE400E00204 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8C324226E9EDE400E00204 /* WebViewController.swift */; };
 		7A8C324626EA00EA00E00204 /* URL+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8C324526EA00EA00E00204 /* URL+Ext.swift */; };
+		7A8C324826EA02B700E00204 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8C324726EA02B700E00204 /* RealmHelper.swift */; };
 		B9D0C6CA6EC2C6B847EE7074 /* Pods_DiscordLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCE477960C098F0D99E1133 /* Pods_DiscordLogin.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		7A8C323E26E9ECB100E00204 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		7A8C324226E9EDE400E00204 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		7A8C324526EA00EA00E00204 /* URL+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Ext.swift"; sourceTree = "<group>"; };
+		7A8C324726EA02B700E00204 /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				7A8C324526EA00EA00E00204 /* URL+Ext.swift */,
+				7A8C324726EA02B700E00204 /* RealmHelper.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				7A8C324626EA00EA00E00204 /* URL+Ext.swift in Sources */,
 				7A8C322726E9D3FC00E00204 /* AppDelegate.swift in Sources */,
 				7A8C322926E9D3FD00E00204 /* SceneDelegate.swift in Sources */,
+				7A8C324826EA02B700E00204 /* RealmHelper.swift in Sources */,
 				7A8C324326E9EDE400E00204 /* WebViewController.swift in Sources */,
 				7A8C323B26E9D62100E00204 /* Model.swift in Sources */,
 			);

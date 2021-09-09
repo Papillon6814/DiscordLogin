@@ -34,14 +34,16 @@ extension WebViewController: WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         // ここでcode取得できそう
-        print(navigationAction.request.url)
+        //print(navigationAction.request.url)
         
         decisionHandler(.allow)
         
         if let url = navigationAction.request.url,
            let code = url.queryValue(for: "code") {
             print("code: \(code)")
+            RealmHelper.shared.setAuthCode(code: code)
+            
+            dismiss(animated: true)
         }
-        //dismiss(animated: true)
     }
 }

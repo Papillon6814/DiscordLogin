@@ -19,5 +19,15 @@ class ViewController: UIViewController {
         
         model = Model()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        guard let code = RealmHelper.shared.getAuthCode() else {
+            return
+        }
+        
+        print(code)
+    }
 }
 
