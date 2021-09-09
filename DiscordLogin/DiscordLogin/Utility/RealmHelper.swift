@@ -11,7 +11,15 @@ import RealmSwift
 class RealmHelper {
     
     static let shared = RealmHelper()
-    let realm = try! Realm()
+    let realm = try! Realm(configuration: Realm.Configuration(deleteRealmIfMigrationNeeded: true))
+    
+    func getAccessToken() -> String? {
+        if let auth = realm.objects(Auth.self).first {
+            return auth.accessToken
+        }
+        
+        return nil
+    }
     
     func getAuthCode() -> String? {
         if let auth = realm.objects(Auth.self).first {
@@ -19,6 +27,10 @@ class RealmHelper {
         }
         
         return nil
+    }
+    
+    func getAuth() -> Auth? {
+        return realm.objects(Auth.self).first
     }
     
     func setAuthCode(code: String) {
@@ -35,10 +47,23 @@ class RealmHelper {
             realm.add(auth)
         }
     }
+    
+    func setAuth(auth: Auth) {
+        if let auth = realm.objects(Auth.self).first {
+            try! realm.write {
+                realm.delete(auth)
+            }
+        }
+        
+        try! realm.write {
+            realm.add(auth)
+        }
+    }
 }
 
 class Auth: Object {
     
-    @objc dynamic var username: String = ""
+    @objc dynamic var accessToken: String = ""
     @objc dynamic var code: String = ""
+    @objc dynamic var refreshToken: String = ""
 }

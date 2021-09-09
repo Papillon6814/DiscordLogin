@@ -27,7 +27,13 @@ class ViewController: UIViewController {
             return
         }
         
-        print(code)
+        model.retrieveTokens(code: code) { [weak self] result in
+            print(result)
+            self?.model.getUserInfo() { [weak self] username, discriminator in
+                self?.usernameLabel.text = username
+                self?.tagLabel.text = discriminator
+            }
+        }
     }
 }
 
