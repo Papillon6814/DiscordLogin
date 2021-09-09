@@ -15,22 +15,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYp-iO-YhX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="discord username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYp-iO-YhX">
                                 <rect key="frame" x="20" y="431" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHe-VS-Zlt">
+                                <rect key="frame" x="20" y="485" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cQv-z0-yzh">
+                                <rect key="frame" x="20" y="814" width="374" height="48"/>
+                                <color key="backgroundColor" red="0.44705882352941173" green="0.53725490196078429" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="scy-Un-cbS"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VLB-o7-UrV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="fYp-iO-YhX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8jm-A1-TYM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cQv-z0-yzh" secondAttribute="trailing" constant="20" id="9SM-yx-mZ3"/>
                             <constraint firstItem="fYp-iO-YhX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9Sb-L6-lpa"/>
+                            <constraint firstItem="cQv-z0-yzh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Gwb-CR-iJZ"/>
+                            <constraint firstItem="fHe-VS-Zlt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vii-eV-yCj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fHe-VS-Zlt" secondAttribute="trailing" constant="20" id="W2s-Py-aHg"/>
+                            <constraint firstItem="cQv-z0-yzh" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="YLw-G9-O1s"/>
+                            <constraint firstItem="fHe-VS-Zlt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aHo-Np-Crg"/>
+                            <constraint firstItem="fHe-VS-Zlt" firstAttribute="top" secondItem="fYp-iO-YhX" secondAttribute="bottom" constant="20" id="jCW-FA-4mu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fYp-iO-YhX" secondAttribute="trailing" constant="20" id="r6P-sx-oFh"/>
                             <constraint firstItem="fYp-iO-YhX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zcr-6F-S0P"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tagLabel" destination="fHe-VS-Zlt" id="sQ5-sw-0gd"/>
+                        <outlet property="usernameLabel" destination="fYp-iO-YhX" id="Pac-sp-N1H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

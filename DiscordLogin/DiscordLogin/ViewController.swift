@@ -9,12 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var tagLabel: UILabel!
+    
     private var model: Model!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         model = Model()
+    }
+    
+    @IBAction func onButtonPushed(_ sender: Any) {
+        model.openAuthScreen()
     }
 }
 
