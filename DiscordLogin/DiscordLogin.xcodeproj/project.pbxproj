@@ -16,6 +16,7 @@
 		7A8C323B26E9D62100E00204 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8C323A26E9D62100E00204 /* Model.swift */; };
 		7A8C323F26E9ECB100E00204 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8C323E26E9ECB100E00204 /* WebKit.framework */; };
 		7A8C324326E9EDE400E00204 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8C324226E9EDE400E00204 /* WebViewController.swift */; };
+		7A8C324626EA00EA00E00204 /* URL+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8C324526EA00EA00E00204 /* URL+Ext.swift */; };
 		B9D0C6CA6EC2C6B847EE7074 /* Pods_DiscordLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCE477960C098F0D99E1133 /* Pods_DiscordLogin.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		7A8C323A26E9D62100E00204 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		7A8C323E26E9ECB100E00204 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		7A8C324226E9EDE400E00204 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		7A8C324526EA00EA00E00204 /* URL+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		7A8C322526E9D3FC00E00204 /* DiscordLogin */ = {
 			isa = PBXGroup;
 			children = (
+				7A8C324426EA00D500E00204 /* Utility */,
 				7A8C324126E9EDD000E00204 /* Model */,
 				7A8C324026E9EDBC00E00204 /* ViewController */,
 				7A8C322626E9D3FC00E00204 /* AppDelegate.swift */,
@@ -106,6 +109,14 @@
 				7A8C323A26E9D62100E00204 /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7A8C324426EA00D500E00204 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				7A8C324526EA00EA00E00204 /* URL+Ext.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		819DB0852FF1D64EE6E6D8B1 /* Pods */ = {
@@ -232,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A8C322B26E9D3FD00E00204 /* ViewController.swift in Sources */,
+				7A8C324626EA00EA00E00204 /* URL+Ext.swift in Sources */,
 				7A8C322726E9D3FC00E00204 /* AppDelegate.swift in Sources */,
 				7A8C322926E9D3FD00E00204 /* SceneDelegate.swift in Sources */,
 				7A8C324326E9EDE400E00204 /* WebViewController.swift in Sources */,

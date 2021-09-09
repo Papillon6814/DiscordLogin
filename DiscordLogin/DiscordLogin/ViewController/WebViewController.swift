@@ -38,7 +38,10 @@ extension WebViewController: WKNavigationDelegate {
         
         decisionHandler(.allow)
         
-        
+        if let url = navigationAction.request.url,
+           let code = url.queryValue(for: "code") {
+            print("code: \(code)")
+        }
         //dismiss(animated: true)
     }
 }
